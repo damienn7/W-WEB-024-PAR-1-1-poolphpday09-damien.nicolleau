@@ -4,7 +4,7 @@ class MyDisplay
 {
     public function display()
     {
-        echo "Hello world !\n";
+        echo "Hello World !\n";
     }
 }
 
