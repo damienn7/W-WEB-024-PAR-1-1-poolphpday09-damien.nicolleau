@@ -83,6 +83,11 @@ class Paladin extends Character
     {
         echo $this->name.": I’ll crush you with my hammer !\n";
     }
+
+    public function getClasse()
+    {
+        return self::CLASSE;
+    }
 }
 
 class Mage extends Character
@@ -113,6 +118,11 @@ class Mage extends Character
     public function attack()
     {
         echo $this->name.": Feel the power of my magic !\n";
+    }
+
+    public function getClasse()
+    {
+        return self::CLASSE;
     }
 }
 

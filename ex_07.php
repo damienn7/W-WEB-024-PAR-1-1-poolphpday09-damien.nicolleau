@@ -1,6 +1,6 @@
 <?php
 
-class Character
+class Character implements iMove
 {
     const CLASSE = "Character";
 
@@ -52,9 +52,29 @@ class Character
     {
         return self::CLASSE;
     }
+
+    public function moveRight()
+    {
+        echo $this->name.": moves right.\n";
+    }
+
+    public function moveLeft()
+    {
+        echo $this->name.": moves left.\n";
+    }
+
+    public function moveUp()
+    {
+        echo $this->name.": moves up.\n";
+    }
+
+    public function moveDown()
+    {
+        echo $this->name.": moves down.\n";
+    }
 }
 
-class Paladin extends Character implements iMove
+class Paladin extends Character
 {
     const CLASSE = "Paladin";
 
@@ -84,24 +104,9 @@ class Paladin extends Character implements iMove
         echo $this->name.": I’ll crush you with my hammer !\n";
     }
 
-    public function moveRight()
+    public function getClasse()
     {
-        echo $this->name.": moves right.\n";
-    }
-
-    public function moveLeft()
-    {
-        echo $this->name.": moves left.\n";
-    }
-
-    public function moveUp()
-    {
-        echo $this->name.": moves up.\n";
-    }
-
-    public function moveDown()
-    {
-        echo $this->name.": moves down.\n";
+        return self::CLASSE;
     }
 }
 
@@ -133,6 +138,11 @@ class Mage extends Character
     public function attack()
     {
         echo $this->name.": Feel the power of my magic !\n";
+    }
+
+    public function getClasse()
+    {
+        return self::CLASSE;
     }
 }
 
