@@ -34,33 +34,47 @@ class MyTinyCalculator
         return $this->b;
     }
 
+    public function setResult($result)
+    {
+        $this->result=$result;
+    }
+
+    public function getResult()
+    {
+        return $this->result;
+    }
+
     public function add()
     {
         $this->result=$this->a+$this->b;
+        $this->setResult($this->result);
         return $this->result;
     }
 
     public function subtract()
     {
         $this->result=$this->a-$this->b;
+        $this->setResult($this->result);
         return $this->result;
     }
 
     public function multiply()
     {
         $this->result=$this->a*$this->b;
+        $this->setResult($this->result);
         return $this->result;
     }
     
     public function divide()
     {
         $this->result=$this->a/$this->b;
+        $this->setResult($this->result);
         return $this->result;
     }
 
     public function showResult()
     {
-        return $this->result;
+        return $this->getResult();
     }
 }
 
