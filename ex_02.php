@@ -8,15 +8,14 @@ class MyAttribute
      * @var string
      * @access public
      */
-    public $named;
+    public $name="";
 
     /**
      * @param name
      */
     public function __construct($name)
     {
-        $this->$named=$name;
-
+        $this->name=$name;
     }
 
     /**
@@ -24,10 +23,10 @@ class MyAttribute
      */
     public function display()
     {
-        echo $this->$named."\n";
+        echo $this->name."\n";
     }
 }
 
 
 //$foo = new MyAttribute("Jean-Luc");
-//$foo->display();
+//foo->display();
