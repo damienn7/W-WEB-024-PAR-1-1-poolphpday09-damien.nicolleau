@@ -100,7 +100,7 @@ class Mage extends Character
 
     protected $agility=10;
 
-    protected $strength=10;
+    protected $strength=3;
 
     protected $mana=10;
 

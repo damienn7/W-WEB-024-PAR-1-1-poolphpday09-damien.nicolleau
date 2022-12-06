@@ -138,9 +138,9 @@ class Mage extends Character
 
     protected $endurance=70;
 
-    protected $agility=3;
+    protected $agility=10;
 
-    protected $strength=10;
+    protected $strength=3;
 
     protected $mana=10;
 

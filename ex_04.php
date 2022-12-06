@@ -78,11 +78,7 @@ class MyTinyCalculator
     }
 }
 
-/*
+
 $foo = new MyTinyCalculator(30, 12);
-echo $foo->add () . "\n";
-echo $foo->subtract () . "\n";
-echo $foo->multiply () . "\n";
-echo $foo->divide () . "\n";
+
 echo $foo->showResult () . "\n";
-*/
